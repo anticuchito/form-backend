@@ -7,9 +7,10 @@ import { InicioComponent } from './inicio/inicio.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MostrarDosCamposComponent } from './mostrar-dos-campos/mostrar-dos-campos.component';
 
 @NgModule({
-  declarations: [AppComponent, InicioComponent],
+  declarations: [AppComponent, InicioComponent, MostrarDosCamposComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,28 @@
+<div class="container">
+  <div>
+    <h1>mostrar Datos Dos Campos</h1>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <th>Campo1</th>
+        <th>Campo2</th>
+        <th>Aciones</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let datos_dosCampos of datos_formulario">
+          <td>{{ datos_dosCampos.campo1 }}</td>
+          <td>{{ datos_dosCampos.campo2 }}</td>
+          <td>
+            <button
+              class="btn btn-danger btn-round"
+              (click)="eliminarDosCampos(datos_dosCampos._id)"
+            >
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
